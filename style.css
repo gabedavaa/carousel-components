@@ -24,22 +24,31 @@ body {
 }
 
 .container {
+  max-width: 60rem;
+  height: 50rem;
+  margin: 0 auto;
   position: relative;
-  display: flex;
+
+  overflow: hidden;
 }
 
 .carousel {
-  width: 800px;
-  margin: 100px auto;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 80%;
+  /* transform: translate(-50%, -75%); */
+
   background-color: #087f5b;
   border-radius: 8px;
   padding: 32px 48px 32px 86px;
 
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 86px;
 
-  position: relative;
+  transition: transform 1s;
 }
 
 img {
@@ -85,15 +94,15 @@ img {
 }
 
 .btn--left {
-  left: 0;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 10%;
+  top: 40%;
+  transform: translate(65%, 0);
 }
 
 .btn--right {
-  right: 0;
-  top: 50%;
-  transform: translate(50%, -50%);
+  right: 5.5%;
+  top: 40%;
+  transform: translate(65%, 0);
 }
 
 .btn-icon {
@@ -114,7 +123,7 @@ img {
   position: absolute;
   bottom: 50%;
   left: 50%;
-  transform: translate(-50%, 168px);
+  transform: translate(40%, 128px);
 }
 
 .dot {
@@ -126,7 +135,7 @@ img {
   cursor: pointer;
 }
 
-.dot--fill {
+.dot--active {
   background-color: #087f5b;
 }
 
