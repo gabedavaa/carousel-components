@@ -142,3 +142,47 @@ img {
 .hidden {
   display: none;
 }
+
+.icons-containers {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 80px;
+  justify-content: space-around;
+  /* background-color: #c3fae8; */
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-linkedin,
+.fa-instagram {
+  height: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .yellow-color {
+  color: blue;
+} */
+/* .blue-color {
+  margin-top: 20px;
+  color: blue;
+  height: 20px;
+  height: 20px;
+} */
